@@ -6,7 +6,6 @@
 //! http://tools.ietf.org/html/rfc6265
 
 use cookie_rs;
-use hyper;
 use net_traits::CookieSource;
 use net_traits::pub_domains::is_pub_domain;
 use servo_url::ServoUrl;

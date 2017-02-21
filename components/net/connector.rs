@@ -5,7 +5,7 @@
 use hyper;
 use hyper::client::Pool;
 use hyper_openssl;
-use openssl::ssl::{SSL_OP_NO_COMPRESSION, SSL_OP_NO_SSLV2, SSL_OP_NO_SSLV3, SSL_VERIFY_PEER};
+use openssl::ssl::{SSL_OP_NO_COMPRESSION, SSL_OP_NO_SSLV2, SSL_OP_NO_SSLV3};
 use openssl::ssl::{SslConnectorBuilder, SslMethod};
 use servo_config::resource_files::resources_dir_path;
 use std::sync::Arc;
@@ -31,7 +31,7 @@ const DEFAULT_CIPHERS: &'static str = concat!(
 pub fn create_http_connector(certificate_file: &str) -> Arc<Pool<Connector>> {
     let ca_file = &resources_dir_path()
         .expect("Need certificate file to make network requests")
-        .join("certs");
+        .join(certificate_file);
 
     let mut ssl_connector_builder = SslConnectorBuilder::new(SslMethod::tls()).unwrap();
     {
@@ -43,6 +43,6 @@ pub fn create_http_connector(certificate_file: &str) -> Arc<Pool<Connector>> {
     let ssl_connector = ssl_connector_builder.build();
     let ssl_client = hyper_openssl::OpensslClient::from(ssl_connector);
     let https_connector = hyper::net::HttpsConnector::new(ssl_client);
-    
+
     Arc::new(Pool::with_connector(Default::default(), https_connector))
 }

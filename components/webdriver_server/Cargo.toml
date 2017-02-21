@@ -1,4 +1,4 @@
-	[package]
+[package]
 name = "webdriver_server"
 version = "0.0.1"
 authors = ["The Servo Project Developers"]

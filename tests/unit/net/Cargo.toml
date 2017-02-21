@@ -15,7 +15,7 @@ cookie = "0.4"
 devtools_traits = {path = "../../../components/devtools_traits"}
 flate2 = "0.2.0"
 hyper = "0.10"
-hyper_serde = {git = "https://github.com/avadacatavra/hyper_serde.git", branch = "hyper-bump" } 
+hyper_serde = {git = "https://github.com/avadacatavra/hyper_serde.git", branch = "hyper-bump" }
 ipc-channel = "0.7"
 msg = {path = "../../../components/msg"}
 net = {path = "../../../components/net"}
