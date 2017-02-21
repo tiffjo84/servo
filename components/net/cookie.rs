@@ -90,7 +90,7 @@ impl Cookie {
         })
     }
 
-    pub fn new_wrapped_hyper(cookie: hyper::header::CookiePair, request: &ServoUrl,
+    pub fn new_wrapped_hyper(cookie: cookie_rs::Cookie, request: &ServoUrl,
                              source: CookieSource) -> Option<Cookie> {
         let cookie = cookie_rs::Cookie {
             name: cookie.name,
