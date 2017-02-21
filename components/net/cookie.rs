@@ -90,8 +90,11 @@ impl Cookie {
         })
     }
 
-    pub fn new_wrapped_hyper(cookie: cookie_rs::Cookie, request: &ServoUrl,
+    //hyper just uses strings inside the cookie headers now
+    pub fn new_wrapped_hyper(cookie: String, request: &ServoUrl,
                              source: CookieSource) -> Option<Cookie> {
+        let cookie = cookie_rs::Cookie::parse(&cookie).unwrap();
+
         let cookie = cookie_rs::Cookie {
             name: cookie.name,
             value: cookie.value,
