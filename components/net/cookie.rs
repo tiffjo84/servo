@@ -18,7 +18,7 @@ use time::{Tm, now, at, Duration};
 /// which cookie-rs and hyper's header parsing do not support.
 #[derive(Clone, Debug, RustcDecodable, RustcEncodable)]
 pub struct Cookie {
-    pub cookie: cookie_rs::Cookie,
+    pub cookie: cookie_rs::Cookie<'static>,
     pub host_only: bool,
     pub persistent: bool,
     pub creation_time: Tm,
