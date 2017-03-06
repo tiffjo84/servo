@@ -3846,6 +3846,8 @@ cfg_if! {
             pub static nsGkAtoms_onmozinterruptend: *mut nsIAtom;
             #[link_name = "_ZN9nsGkAtoms14ondevicechangeE"]
             pub static nsGkAtoms_ondevicechange: *mut nsIAtom;
+            #[link_name = "_ZN9nsGkAtoms33mozinputrangeignorepreventdefaultE"]
+            pub static nsGkAtoms_mozinputrangeignorepreventdefault: *mut nsIAtom;
             #[link_name = "_ZN9nsGkAtoms12cdataTagNameE"]
             pub static nsGkAtoms_cdataTagName: *mut nsIAtom;
             #[link_name = "_ZN9nsGkAtoms14commentTagNameE"]
@@ -4196,8 +4198,6 @@ cfg_if! {
             pub static nsGkAtoms_genConInitializerProperty: *mut nsIAtom;
             #[link_name = "_ZN9nsGkAtoms24labelMouseDownPtPropertyE"]
             pub static nsGkAtoms_labelMouseDownPtProperty: *mut nsIAtom;
-            #[link_name = "_ZN9nsGkAtoms15baseURIPropertyE"]
-            pub static nsGkAtoms_baseURIProperty: *mut nsIAtom;
             #[link_name = "_ZN9nsGkAtoms17lockedStyleStatesE"]
             pub static nsGkAtoms_lockedStyleStates: *mut nsIAtom;
             #[link_name = "_ZN9nsGkAtoms20apzCallbackTransformE"]
@@ -4824,8 +4824,10 @@ cfg_if! {
             pub static nsCSSPseudoElements_mozColorSwatch: *mut nsICSSPseudoElement;
             #[link_name = "_ZN14nsCSSAnonBoxes7mozTextE"]
             pub static nsCSSAnonBoxes_mozText: *mut nsICSSAnonBoxPseudo;
-            #[link_name = "_ZN14nsCSSAnonBoxes18mozOtherNonElementE"]
-            pub static nsCSSAnonBoxes_mozOtherNonElement: *mut nsICSSAnonBoxPseudo;
+            #[link_name = "_ZN14nsCSSAnonBoxes11placeholderE"]
+            pub static nsCSSAnonBoxes_placeholder: *mut nsICSSAnonBoxPseudo;
+            #[link_name = "_ZN14nsCSSAnonBoxes23firstLetterContinuationE"]
+            pub static nsCSSAnonBoxes_firstLetterContinuation: *mut nsICSSAnonBoxPseudo;
             #[link_name = "_ZN14nsCSSAnonBoxes17mozAnonymousBlockE"]
             pub static nsCSSAnonBoxes_mozAnonymousBlock: *mut nsICSSAnonBoxPseudo;
             #[link_name = "_ZN14nsCSSAnonBoxes27mozAnonymousPositionedBlockE"]
@@ -8767,6 +8769,8 @@ cfg_if! {
             pub static nsGkAtoms_onmozinterruptend: *mut nsIAtom;
             #[link_name = "?ondevicechange@nsGkAtoms@@2PEAVnsIAtom@@EA"]
             pub static nsGkAtoms_ondevicechange: *mut nsIAtom;
+            #[link_name = "?mozinputrangeignorepreventdefault@nsGkAtoms@@2PEAVnsIAtom@@EA"]
+            pub static nsGkAtoms_mozinputrangeignorepreventdefault: *mut nsIAtom;
             #[link_name = "?cdataTagName@nsGkAtoms@@2PEAVnsIAtom@@EA"]
             pub static nsGkAtoms_cdataTagName: *mut nsIAtom;
             #[link_name = "?commentTagName@nsGkAtoms@@2PEAVnsIAtom@@EA"]
@@ -9117,8 +9121,6 @@ cfg_if! {
             pub static nsGkAtoms_genConInitializerProperty: *mut nsIAtom;
             #[link_name = "?labelMouseDownPtProperty@nsGkAtoms@@2PEAVnsIAtom@@EA"]
             pub static nsGkAtoms_labelMouseDownPtProperty: *mut nsIAtom;
-            #[link_name = "?baseURIProperty@nsGkAtoms@@2PEAVnsIAtom@@EA"]
-            pub static nsGkAtoms_baseURIProperty: *mut nsIAtom;
             #[link_name = "?lockedStyleStates@nsGkAtoms@@2PEAVnsIAtom@@EA"]
             pub static nsGkAtoms_lockedStyleStates: *mut nsIAtom;
             #[link_name = "?apzCallbackTransform@nsGkAtoms@@2PEAVnsIAtom@@EA"]
@@ -9745,8 +9747,10 @@ cfg_if! {
             pub static nsCSSPseudoElements_mozColorSwatch: *mut nsICSSPseudoElement;
             #[link_name = "?mozText@nsCSSAnonBoxes@@2PEAVnsICSSAnonBoxPseudo@@EA"]
             pub static nsCSSAnonBoxes_mozText: *mut nsICSSAnonBoxPseudo;
-            #[link_name = "?mozOtherNonElement@nsCSSAnonBoxes@@2PEAVnsICSSAnonBoxPseudo@@EA"]
-            pub static nsCSSAnonBoxes_mozOtherNonElement: *mut nsICSSAnonBoxPseudo;
+            #[link_name = "?placeholder@nsCSSAnonBoxes@@2PEAVnsICSSAnonBoxPseudo@@EA"]
+            pub static nsCSSAnonBoxes_placeholder: *mut nsICSSAnonBoxPseudo;
+            #[link_name = "?firstLetterContinuation@nsCSSAnonBoxes@@2PEAVnsICSSAnonBoxPseudo@@EA"]
+            pub static nsCSSAnonBoxes_firstLetterContinuation: *mut nsICSSAnonBoxPseudo;
             #[link_name = "?mozAnonymousBlock@nsCSSAnonBoxes@@2PEAVnsICSSAnonBoxPseudo@@EA"]
             pub static nsCSSAnonBoxes_mozAnonymousBlock: *mut nsICSSAnonBoxPseudo;
             #[link_name = "?mozAnonymousPositionedBlock@nsCSSAnonBoxes@@2PEAVnsICSSAnonBoxPseudo@@EA"]
@@ -13688,6 +13692,8 @@ cfg_if! {
             pub static nsGkAtoms_onmozinterruptend: *mut nsIAtom;
             #[link_name = "\x01?ondevicechange@nsGkAtoms@@2PAVnsIAtom@@A"]
             pub static nsGkAtoms_ondevicechange: *mut nsIAtom;
+            #[link_name = "\x01?mozinputrangeignorepreventdefault@nsGkAtoms@@2PAVnsIAtom@@A"]
+            pub static nsGkAtoms_mozinputrangeignorepreventdefault: *mut nsIAtom;
             #[link_name = "\x01?cdataTagName@nsGkAtoms@@2PAVnsIAtom@@A"]
             pub static nsGkAtoms_cdataTagName: *mut nsIAtom;
             #[link_name = "\x01?commentTagName@nsGkAtoms@@2PAVnsIAtom@@A"]
@@ -14038,8 +14044,6 @@ cfg_if! {
             pub static nsGkAtoms_genConInitializerProperty: *mut nsIAtom;
             #[link_name = "\x01?labelMouseDownPtProperty@nsGkAtoms@@2PAVnsIAtom@@A"]
             pub static nsGkAtoms_labelMouseDownPtProperty: *mut nsIAtom;
-            #[link_name = "\x01?baseURIProperty@nsGkAtoms@@2PAVnsIAtom@@A"]
-            pub static nsGkAtoms_baseURIProperty: *mut nsIAtom;
             #[link_name = "\x01?lockedStyleStates@nsGkAtoms@@2PAVnsIAtom@@A"]
             pub static nsGkAtoms_lockedStyleStates: *mut nsIAtom;
             #[link_name = "\x01?apzCallbackTransform@nsGkAtoms@@2PAVnsIAtom@@A"]
@@ -14666,8 +14670,10 @@ cfg_if! {
             pub static nsCSSPseudoElements_mozColorSwatch: *mut nsICSSPseudoElement;
             #[link_name = "\x01?mozText@nsCSSAnonBoxes@@2PAVnsICSSAnonBoxPseudo@@A"]
             pub static nsCSSAnonBoxes_mozText: *mut nsICSSAnonBoxPseudo;
-            #[link_name = "\x01?mozOtherNonElement@nsCSSAnonBoxes@@2PAVnsICSSAnonBoxPseudo@@A"]
-            pub static nsCSSAnonBoxes_mozOtherNonElement: *mut nsICSSAnonBoxPseudo;
+            #[link_name = "\x01?placeholder@nsCSSAnonBoxes@@2PAVnsICSSAnonBoxPseudo@@A"]
+            pub static nsCSSAnonBoxes_placeholder: *mut nsICSSAnonBoxPseudo;
+            #[link_name = "\x01?firstLetterContinuation@nsCSSAnonBoxes@@2PAVnsICSSAnonBoxPseudo@@A"]
+            pub static nsCSSAnonBoxes_firstLetterContinuation: *mut nsICSSAnonBoxPseudo;
             #[link_name = "\x01?mozAnonymousBlock@nsCSSAnonBoxes@@2PAVnsICSSAnonBoxPseudo@@A"]
             pub static nsCSSAnonBoxes_mozAnonymousBlock: *mut nsICSSAnonBoxPseudo;
             #[link_name = "\x01?mozAnonymousPositionedBlock@nsCSSAnonBoxes@@2PAVnsICSSAnonBoxPseudo@@A"]
@@ -18612,6 +18618,8 @@ macro_rules! atom {
   { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsGkAtoms_onmozinterruptend as *mut _) } };
 ("ondevicechange") =>
   { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsGkAtoms_ondevicechange as *mut _) } };
+("mozinputrangeignorepreventdefault") =>
+  { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsGkAtoms_mozinputrangeignorepreventdefault as *mut _) } };
 ("#cdata-section") =>
   { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsGkAtoms_cdataTagName as *mut _) } };
 ("#comment") =>
@@ -18962,8 +18970,6 @@ macro_rules! atom {
   { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsGkAtoms_genConInitializerProperty as *mut _) } };
 ("LabelMouseDownPtProperty") =>
   { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsGkAtoms_labelMouseDownPtProperty as *mut _) } };
-("baseURIProperty") =>
-  { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsGkAtoms_baseURIProperty as *mut _) } };
 ("lockedStyleStates") =>
   { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsGkAtoms_lockedStyleStates as *mut _) } };
 ("apzCallbackTransform") =>
@@ -19590,8 +19596,10 @@ macro_rules! atom {
   { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsCSSPseudoElements_mozColorSwatch as *mut _) } };
 (":-moz-text") =>
   { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsCSSAnonBoxes_mozText as *mut _) } };
-(":-moz-other-non-element") =>
-  { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsCSSAnonBoxes_mozOtherNonElement as *mut _) } };
+(":-moz-placeholder-anon-box") =>
+  { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsCSSAnonBoxes_placeholder as *mut _) } };
+(":-moz-first-letter-continuation") =>
+  { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsCSSAnonBoxes_firstLetterContinuation as *mut _) } };
 (":-moz-anonymous-block") =>
   { unsafe { $crate::string_cache::atom_macro::atom_from_static($crate::string_cache::atom_macro::nsCSSAnonBoxes_mozAnonymousBlock as *mut _) } };
 (":-moz-anonymous-positioned-block") =>
